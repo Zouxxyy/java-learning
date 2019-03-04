@@ -4,6 +4,7 @@ import java.lang.reflect.*;
 import java.util.*;
 
 /**
+ * 程序5-16
  * 使用反射动态创建泛型数组
  * @version 1.00 2019-03-02
  * @author zouxxyy

@@ -7,8 +7,9 @@ import java.lang.reflect.Modifier;
 import java.util.ArrayList;
 
 /**
+ * 程序5-15
  * toString()函数
- * @version 1.00 2019-03-02
+ * @version 1.01 2019-03-02
  * @author zouxxyy
  */
 public class ObjectAnalyzer {

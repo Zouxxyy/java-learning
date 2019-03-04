@@ -2,6 +2,12 @@ package com.zouxxyy.corejava.chap5.objectAnalyzer;
 
 import java.util.ArrayList;
 
+/**
+ * 程序5-14
+ * toString()函数
+ * @version 1.00 2019-03-02
+ * @author zouxxyy
+ */
 public class ObjectAnalyzerTest {
 
     public static void main(String[] args) {

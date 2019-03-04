@@ -4,6 +4,7 @@ import java.util.*;
 import java.lang.reflect.*;
 
 /**
+ * 程序5-13
  * 用反射查看一个类的全部信息
  * @version 1.00 2019-03-02
  * @author zouxxyy
