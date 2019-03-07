@@ -5,12 +5,12 @@ import java.util.*;
 /**
  * 程序9-6
  * map使用示例
- * @version 1.00 2019-03-06
+ * @version 1.01 2019-03-07
  * @author zouxxyy
  */
 public class MapTest {
     public static void main(String[] args) {
-        Map<String, Integer> scores = new HashMap<>();
+        TreeMap<String, Integer> scores = new HashMap<>();
         scores.put("Kid", 95);
         scores.put("Tom", 67);
         scores.put("Jack", 34);
@@ -30,13 +30,25 @@ public class MapTest {
         // 计数Map的put方法
         scores.put("Jack", scores.getOrDefault("Jack", 0) + 1); // 方法1
         scores.merge("Jack", 1, Integer::sum); // 方法2
+
+        // 子视图测试
+        System.out.println(scores);
+        SortedMap<String, Integer> s = scores.subMap("Jack", "Vincent");
+        System.out.println(s);
+        s.put("Mary", 33); // 必须在子范围内
+        System.out.println(scores);
+
+        Map<String, Integer> umMap = Collections.synchronizedSortedMap(scores); // 生成一个成不可修改的Map视图
     }
 }
 
 /*输出：
-{Vincent=99, Tom=67, Kid=95, Jack=34}
+{Jack=34, Kid=95, Tom=67, Vincent=99}
 88
-key=Vincent, value99
-key=Tom, value67
 key=Jack, value88
+key=Tom, value67
+key=Vincent, value99
+{Jack=90, Tom=67, Vincent=99}
+{Jack=90, Tom=67}
+{Jack=90, Mary=33, Tom=67, Vincent=99}
  */
