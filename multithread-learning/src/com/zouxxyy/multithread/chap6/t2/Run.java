@@ -1,7 +1,7 @@
 package com.zouxxyy.multithread.chap6.t2;
 
 /**
- * 程序6-1
+ * 程序6-2
  * 延迟加载,DCL双检查锁机制
  * @version 1.00 2019-03-13
  * @author zouxxyy
