@@ -19,6 +19,7 @@
     <modules>
         <module>corejava-learning</module>
         <module>multithread-learning</module>
+        <module>jvm-learning</module>
     </modules>
 
 </project>
