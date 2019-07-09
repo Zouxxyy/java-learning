@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <!--配置servlet的映射-->
+    <!--会被加载到ServletConfig中-->
+    <servlet>
+        <servlet-name>helloServlet</servlet-name>
+        <servlet-class>com.zouxxyy.test.helloServlet</servlet-class>
+        <init-param>
+            <param-name>p1</param-name>
+            <param-value>v1</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>helloServlet</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MyHttpServletTest</servlet-name>
+        <servlet-class>com.zouxxyy.test.MyHttpServletTest</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MyHttpServletTest</servlet-name>
+        <url-pattern>/myHttpServletTest</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MyHttpServletTestGet</servlet-name>
+        <servlet-class>com.zouxxyy.test.MyHttpServletTestGet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MyHttpServletTestGet</servlet-name>
+        <url-pattern>/myHttpServletTestGet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ResponseServletTest</servlet-name>
+        <servlet-class>com.zouxxyy.test.ResponseServletTest</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ResponseServletTest</servlet-name>
+        <url-pattern>/responseServletTest</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CalServlet</servlet-name>
+        <servlet-class>com.zouxxyy.test.CalServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CalServlet</servlet-name>
+        <url-pattern>/calServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.zouxxyy.test.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/loginServlet</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>
