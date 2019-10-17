@@ -1,7 +1,7 @@
-package com.zouxxyy.effective.chap02.item01;
+package com.zouxxyy.effective.chap02.item01.example;
 
 /**
- * 用静态工厂方法代替构造器
+ * 用静态工厂方法代替构造器测试
  */
 
 public class Test {
@@ -24,3 +24,11 @@ public class Test {
 
     }
 }
+
+/*
+zxy
+1956725890
+1956725890
+name: zxy age: 22
+name: zxy
+ */

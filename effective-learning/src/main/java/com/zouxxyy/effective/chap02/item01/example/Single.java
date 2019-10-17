@@ -1,4 +1,4 @@
-package com.zouxxyy.effective.chap02.item01;
+package com.zouxxyy.effective.chap02.item01.example;
 
 // 第二大优势：可用于单例
 public class Single {

@@ -14,5 +14,6 @@ public class ServiceProviderImpl implements ServiceProvider {
 
     static{
         ServiceManager.registerProvider("登录注册服务", new ServiceProviderImpl());
+        System.out.println("成功注册 登录注册服务");
     }
 }

@@ -1,15 +1,17 @@
-package com.zouxxyy.effective.chap02.item01;
+package com.zouxxyy.effective.chap02.item01.example;
 
 
 public class Person {
 
     private String name;
 
+    // 主要缺点：可以发现这里我们不得不把构造器公开，否则不能有子类Student
     Person(String name) {
         this.name = name;
     }
 
     // 第一大优势：有名称
+    // 同时也是第二个缺点：名字取得到天花乱坠，别人就不好发现它们
     public static Person getPerson(String name) {
         return new Person(name);
     }
