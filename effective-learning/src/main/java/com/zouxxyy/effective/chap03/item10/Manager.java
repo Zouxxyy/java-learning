@@ -7,7 +7,6 @@ public class Manager extends Employee {
     @Override
     public boolean equals(Object obj) {
 
-
         if (obj instanceof Manager) {
             Manager o = (Manager) obj;
             return super.equals(obj) && salary.equals(o.salary);

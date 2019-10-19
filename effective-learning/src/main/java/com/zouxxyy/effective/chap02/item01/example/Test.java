@@ -12,8 +12,7 @@ public class Test {
         System.out.println(person.getName());
 
         // 第二大优势：可用于单例
-        System.out.println(Single.getInstance().hashCode());
-        System.out.println(Single.getInstance().hashCode());
+        System.out.println(Single.getInstance() == Single.getInstance());
 
         // 第三大优势：可以返回子类对象
         System.out.println(Person.getStudent("zxy", 22).toString());
@@ -27,8 +26,7 @@ public class Test {
 
 /*
 zxy
-1956725890
-1956725890
+true
 name: zxy age: 22
 name: zxy
  */

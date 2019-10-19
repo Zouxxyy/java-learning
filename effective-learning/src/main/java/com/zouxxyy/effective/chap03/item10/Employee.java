@@ -10,7 +10,7 @@ public class Employee {
         this.name = name;
     }
 
-    // final
+    // 正确写法是用final修饰
     @Override
     public boolean equals(Object obj) {
 

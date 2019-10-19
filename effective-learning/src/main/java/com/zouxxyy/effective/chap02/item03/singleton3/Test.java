@@ -6,6 +6,7 @@ public class Test {
 
         Elvis.INSTANCE.fun1();
 
+
         // ？？？这么简单
 
     }

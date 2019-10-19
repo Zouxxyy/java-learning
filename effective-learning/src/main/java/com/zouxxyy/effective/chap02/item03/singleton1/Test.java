@@ -7,8 +7,7 @@ public class Test {
         Elvis instance1 = Elvis.INSTANCE;
         Elvis instance2 = Elvis.INSTANCE;
 
-        System.out.println(instance1.hashCode());
-        System.out.println(instance2.hashCode());
+        System.out.println(instance1 == instance2);
 
     }
 }
@@ -16,6 +15,5 @@ public class Test {
 
 
 /*
-1956725890
-1956725890
+true
  */
