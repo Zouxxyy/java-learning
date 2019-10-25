@@ -5,8 +5,8 @@ public class Person {
 
     private String name;
 
-    // 主要缺点：可以发现这里我们不得不把构造器公开，否则不能有子类Student
-    Person(String name) {
+    // 主要缺点：可以发现这里我们不得不把构造器protected，否则不能有子类Student
+    protected Person(String name) {
         this.name = name;
     }
 
